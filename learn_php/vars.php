@@ -18,6 +18,21 @@ function globalVarFunc(){
 	$y = $x + $y;
 }
 globalVarFunc();
-echo $y;
+echo $y . "<br >";
+
+$numOfCalls = 0;
+
+function increment(){
+	global $numOfCalls;
+	static $inc = 0;
+	$inc++;
+	$numOfCalls = $inc;
+}
+increment();
+increment();
+increment();
+increment();
+
+echo "increment function called $numOfCalls times"
 
 ?>
