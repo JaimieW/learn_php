@@ -25,5 +25,8 @@ $pizza = new Pizza();
 var_dump($pizza);
 echo $pizza->crust;
 
+$xxx = null;
+var_dump($xxx);
+
 
 ?>
