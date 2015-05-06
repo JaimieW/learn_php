@@ -21,4 +21,6 @@ echo "<br>";
 echo "original var ref: ". $str; // interesting that the original var is not modified
 echo "<br>";
 
+// string ref: http://www.w3schools.com/php/php_ref_string.asp
+
 ?>
