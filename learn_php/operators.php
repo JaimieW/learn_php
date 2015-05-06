@@ -3,7 +3,7 @@ $x = 5;
 $y = 2;
 function printOperation($a, $b, $result, $operator){
 	if($result === true) $result = "true";
-	else if($result === false) $result = "false";
+	else if($result === false) $result = "false"; // addendum: should have used elseif 
 	echo "$a $operator $b = $result <br>";
 }
 
