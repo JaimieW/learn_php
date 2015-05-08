@@ -17,5 +17,12 @@ do{
 } while ($i > 0);
 println("");
 
+$names = array("jaimie", "judith", "leah");
+for($j=0; $j<count($names); $j++){
+	println( $names[$j]);
+}
 
+foreach($names as $name){
+	println($name);
+}
 ?>
