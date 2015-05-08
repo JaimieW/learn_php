@@ -1,5 +1,5 @@
 <?php
-function println($value){
+function println($value = ""){
 	echo "$value <br>";
 }
 ?>
