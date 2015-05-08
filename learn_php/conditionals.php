@@ -1,9 +1,8 @@
 <?php
+include 'util.php';
 $t = date("H");
 
-function println($str){
-	echo $str . "<br>";
-}
+
 if($t < "20"){
 	println("surprise");
 }

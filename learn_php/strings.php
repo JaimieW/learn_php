@@ -1,25 +1,18 @@
 <?php
-
+include 'util.php';
 $str = "hello world";
-echo $str;
-echo "<br>";
+println($str);
 
-echo "string lenght: " . strlen($str);
-echo "<br>";
+println("string lenght: " . strlen($str));
 
-echo "word count: " . str_word_count($str);
-echo "<br>";
+println("word count: " . str_word_count($str));
 
-echo "string reverse: ". strrev($str);
-echo "<br>";
+println("string reverse: ". strrev($str));
 
-echo "position of \"world\": " .strpos($str, "world"); // the \ char escapes
-echo "<br>";
+println("position of \"world\": " .strpos($str, "world")); // the \ char escapes
 
-echo "string replace: " .str_replace("world", "cockface", $str);
-echo "<br>";
-echo "original var ref: ". $str; // interesting that the original var is not modified
-echo "<br>";
+println("string replace: " .str_replace("world", "cockface", $str));
+println("original var ref: ". $str); // interesting that the original var is not modified
 
 // string ref: http://www.w3schools.com/php/php_ref_string.asp
 
