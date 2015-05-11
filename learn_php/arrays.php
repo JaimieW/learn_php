@@ -50,6 +50,14 @@ print_r($ages);				println();
 krsort($ages);
 print_r($ages);				println();
 
-
-
+echo "<br/>";
+// multi dimensional arrays
+$books = array(
+		array("Saga", 50, 10),
+		array("Revival",30, 42),
+		array("Watchmen", 20, 400)
+);
+foreach ($books as $row){
+	println("Book $row[0], $row[2] sold, $row[1] remain in stock");
+}
 ?>
