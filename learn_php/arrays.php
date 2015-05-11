@@ -16,4 +16,6 @@ $ages = array("Jaimie"=>"34", "Judith"=>"33", "Leah"=> "1");
 foreach($ages as $name => $age){
 	println("$name is $age");
 }
+
+// array ref: http://www.w3schools.com/php/php_ref_array.asp
 ?>
