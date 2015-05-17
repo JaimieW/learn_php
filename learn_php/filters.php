@@ -37,4 +37,23 @@ printIsInt(10.3);
 printIsInt('a');
 printIsInt(0);
 
+echo "<hr>";
+
+// validate an IP address
+function printIsIP($var){
+	if(filter_var($var, FILTER_VALIDATE_IP) !== false){
+		echo "$var is a valid IP address";
+	} else {
+		echo "$var is not a valid IP address";
+	}
+	echo "<br/>";
+}
+
+printIsIP("127.0.0.1");
+printIsIP("a");
+printIsIP("127001");
+printIsIP(true);
+printIsIP("127.0.0.1.6.6");
+printIsIP("127.0.0.1:8080");
+
 ?>
