@@ -56,4 +56,8 @@ printIsIP(true);
 printIsIP("127.0.0.1.6.6");
 printIsIP("127.0.0.1:8080");
 
+echo "<hr>";
+
+// validate email
+
 ?>
