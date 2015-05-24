@@ -15,7 +15,8 @@ $sql = "INSERT INTO MyGuests(firstname, lastname, email)
 		VALUES ('John', 'Doe', 'john@ex.com')";
 $queryStatus = $conn->query($sql);
 if($queryStatus === true){
-	echo "john doe added successfully";
+	$last_id = mysqli_insert_id($conn);
+	echo "john doe added successfully with id: ".$last_id;
 } else {
 	echo "error inserting row: ".$conn->error;
 }
